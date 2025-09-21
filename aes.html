@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>How AES Works</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>How AES Works</h1>
+  </header>
+
+  <main>
+    <h2>AES Process</h2>
+    <ol>
+      <li><strong>Key Expansion:</strong> Original key is expanded into multiple round keys.</li>
+      <li><strong>Initial Round:</strong> Plaintext is XORed with the first round key.</li>
+      <li><strong>Rounds:</strong> SubBytes (substitution), ShiftRows (permutation), 
+          MixColumns (mixing), and AddRoundKey (key addition).</li>
+      <li><strong>Final Round:</strong> Similar steps but without MixColumns.</li>
+      <li><strong>Output:</strong> Encrypted ciphertext.</li>
+    </ol>
+
+    <h3>Example</h3>
+    <p><strong>Plaintext:</strong> "HELLO"<br>
+       <strong>Key:</strong> 128-bit key<br>
+       <strong>Output:</strong> Ciphertext (encrypted unreadable text)
+    </p>
+
+    <p>
+      AES ensures confidentiality and makes it computationally infeasible 
+      to recover plaintext without the key.
+    </p>
+
+    <a class="btn" href="index.html">← Back to Home</a>
+  </main>
+
+  <footer>
+    <p>Created for Network Security Assignment</p>
+  </footer>
+</body>
+</html>
