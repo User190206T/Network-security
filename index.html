@@ -16,17 +16,22 @@
       Data Encryption Standard (DES) is a symmetric block cipher. By 'symmetric', we mean that the size of input text and output text (ciphertext) is same (64-bits). The 'block' here means that it takes group of bits together as input instead of encrypting the text bit by bit. Data encryption standard (DES) has been found vulnerable to very powerful attacks and therefore, it was replaced by Advanced Encryption Standard (AES).
     </p>
 
-    <h3>Key Features of AES</h3>
+    <h3>Key Features of DES</h3>
     <ul>
-      <li>Symmetric key algorithm (same key for encryption and decryption).</li>
-      <li>Block cipher that operates on 128-bit blocks.</li>
-      <li>Supports key sizes of 128, 192, or 256 bits.</li>
-      <li>Faster and more secure than DES.</li>
+      <li>It is a block cipher that encrypts data in 64 bit blocks.</li>
+      <li>It takes a 64-bit plaintext input and generates a corresponding 64-bit ciphertext output.</li>
+      <li>The main key length is 64-bit which is transformed into 56-bits by skipping every 8th bit in the key.</li>
+      <li>It encrypts the text in 16 rounds where each round uses 48-bit subkey.</li>
+      <li>This 48-bit subkey is generated from the 56-bit effective key.</li>
+      <li>The same algorithm and key are used for both encryption and decryption with minor changes.</li>
     </ul>
+    <h3>Working of Data Encryption Standard (DES)</h3>
+    <p>
+      DES is based on the two attributes of Feistel cipher i.e. Substitution (also called confusion) and Transposition (also called diffusion). DES consists of 16 steps, each of which is called a round. Each round performs the steps of substitution and transposition along with other operations.
+    </p>
 
     <p>
-      AES is used in applications like secure communications, 
-      online banking, file encryption, and wireless security.
+      Individuals who were exposed to DES during their mothers' pregnancies are commonly referred to as "DES daughters" and "DES sons". Since the discovery of the toxic effects of DES, it has largely been discontinued and is now mostly no longer marketed for human treatment.
     </p>
 
     <a class="btn" href="aes.html">Learn How AES Works →</a>
