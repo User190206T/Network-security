@@ -2,41 +2,36 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>How AES Works</title>
+  <title>How DES Works</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
-    <h1>How AES Works</h1>
+    <h1>How DES Works</h1>
   </header>
 
   <main>
-    <h2>AES Process</h2>
+    <h2>Decryption Example : Securing ATM PINs
+</h2>
     <ol>
-      <li><strong>Key Expansion:</strong> Original key is expanded into multiple round keys.</li>
-      <li><strong>Initial Round:</strong> Plaintext is XORed with the first round key.</li>
-      <li><strong>Rounds:</strong> SubBytes (substitution), ShiftRows (permutation), 
-          MixColumns (mixing), and AddRoundKey (key addition).</li>
-      <li><strong>Final Round:</strong> Similar steps but without MixColumns.</li>
-      <li><strong>Output:</strong> Encrypted ciphertext.</li>
+      <li><strong>Shared Key:</strong> The bank and the ATM machine share a secret DES key.</li>
+      <li><strong>Encryption:</strong> When a customer enters their PIN, the ATM machine uses the shared DES key to encrypt the PIN before sending it over a network.</li>
+      <li><strong>Decryption:</strong> The bank's system receives the encrypted PIN and uses the same shared secret DES key to decrypt it, verifying the customer's identity. </li>
     </ol>
 
-    <h3>Example</h3>
-    <p><strong>Plaintext:</strong> "HELLO"<br>
-       <strong>Key:</strong> 128-bit key<br>
-       <strong>Output:</strong> Ciphertext (encrypted unreadable text)
+    <h3>Security and Modern Usage</h3>
+    <p>DES is now considered insecure for most applications due to its short 56-bit key length, which can be broken by brute-force attacks with modern computing power. However, it was a foundational algorithm, influencing the development of more secure cryptographic standards like AES. 
     </p>
 
     <p>
-      AES ensures confidentiality and makes it computationally infeasible 
-      to recover plaintext without the key.
+     The Data Encryption Standard (DES) algorithm itself is no longer considered secure and is not used for new applications due to its weak 56-bit key length
     </p>
 
     <a class="btn" href="index.html">← Back to Home</a>
   </main>
 
   <footer>
-    <p>Created for Network Security Assignment</p>
+    <p>Created By Tirth A Dharamshi </p>
   </footer>
 </body>
 </html>
